@@ -1,4 +1,4 @@
-console.log("Up and running!");
+/*console.log("Up and running!");
 //var cardOne = "queen";
 //var cardTow = "king";
 //var cardFour = "king";
@@ -20,4 +20,21 @@ if(cardsInPlay.length===2){
 		alert("Sorry, try again");
 	}
 }
+*/
+function checkForMatch(p1,p2){
+	if (p1 === p2) {
+alert("You found a match!");
+} else {
+alert("Sorry, try again.");
+}
+}
+function flipcard(cardId){
+	var cards=["queen","queen","king","king"];
+	var cardsInPlay=[];
+	console.log("User flipcard "+cards[cardId]);
+	cardsInPlay.push(cards[cardId]);
+	checkForMatch(cardsInPlay[0],cardsInPlay[1]);
+}
 
+flipcard(0);
+flipcard(2);
